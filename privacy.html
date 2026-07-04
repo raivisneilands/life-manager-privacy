@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Life Manager – Privacy Policy</title>
-
   <style>
     :root {
       --bg: #0f172a;
@@ -13,7 +12,6 @@
       --muted: #9ca3af;
       --accent: #6366f1;
     }
-
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -21,40 +19,34 @@
       color: var(--text);
       line-height: 1.7;
     }
-
     .container {
       max-width: 800px;
       margin: 60px auto;
       padding: 0 20px;
     }
-
     .card {
       background: var(--card);
       border-radius: 16px;
       padding: 40px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     }
-
     .nav {
       margin-bottom: 20px;
     }
-
     .nav a {
       color: var(--muted);
       text-decoration: none;
       margin-right: 15px;
     }
-
     .nav a.active {
       color: var(--accent);
     }
-
     h1 { font-size: 32px; margin-top: 0; }
     h2 { margin-top: 30px; color: #c7d2fe; }
-
     .muted { color: var(--muted); margin-bottom: 20px; }
     .accent { color: var(--accent); }
-
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
     .footer {
       margin-top: 40px;
       text-align: center;
@@ -64,49 +56,60 @@
   </style>
 </head>
 <body>
-
 <div class="container">
   <div class="card">
-
     <div class="nav">
       <a href="./index.html">Home</a>
       <a href="./privacy.html" class="active">Privacy</a>
       <a href="./terms.html">Terms</a>
     </div>
-
     <h1>Privacy Policy</h1>
-    <div class="muted">Effective date: 05.04.2026</div>
+    <div class="muted">Effective date: 04.07.2026</div>
 
-    <p>Life Manager respects your privacy...</p>
+    <p>Life Manager respects your privacy. This policy explains what information the app collects, how it's used, and who it's shared with.</p>
 
     <h2>1. Information You Provide</h2>
-    <p>Tasks, habits, health, finance, journal entries.</p>
+    <p>When you use Life Manager, you may enter:</p>
+    <ul>
+      <li>Tasks, habits, health entries, finance entries, journal entries, fitness workouts, and goals with plans to achieve them</li>
+      <li>Information about relationships with other people that you choose to add</li>
+      <li>An email address, used to create and sign in to your account</li>
+    </ul>
 
     <h2>2. How Your Data Is Used</h2>
-    <p>Used only inside the app.</p>
+    <p>Your data is used to power the app's features for you: displaying your entries, tracking progress, and syncing your account across devices. If you tap "Generate with AI" on a goal, the goal's title, deadline, and type are sent to our AI provider to generate a suggested plan — see Section 4 for details on what is and isn't included in that request.</p>
 
     <h2>3. Data Storage</h2>
-    <p>Stored <span class="accent">locally on your device</span>.</p>
+    <p>Some data may be stored <span class="accent">locally on your device</span>. Account data — including your goals, plan steps, and the other entries listed in Section 1 — is stored in the cloud using Supabase, so that it stays available when you sign in from a new device.</p>
 
-    <h2>4. Data Sharing</h2>
-    <p>No selling or sharing.</p>
+    <h2>4. Third-Party Services</h2>
+    <p>Life Manager uses the following third-party services to operate:</p>
+    <ul>
+      <li><strong>Supabase</strong> — handles account sign-in and stores your app data (tasks, habits, health entries, finance entries, journal entries, relationships, fitness workouts, goals, and plans) on our behalf.</li>
+      <li><strong>OpenAI</strong> — when you request an AI-generated plan for a goal, only that goal's title, deadline, and goal type are sent to OpenAI to generate suggested steps. Your other data (health, finance, journal, relationships, etc.) is never sent to OpenAI.</li>
+    </ul>
+    <p>These providers process data on our behalf under their own security and data-handling practices, and do not use your data for their own purposes beyond providing the service to us.</p>
 
-    <h2>5. Security</h2>
-    <p>Depends on your device.</p>
+    <h2>5. Data Sharing</h2>
+    <p>We do not sell your data. We do not share it with anyone except the service providers named in Section 4, and only as needed to operate the app.</p>
 
-    <h2>6. Your Control</h2>
-    <p>You can delete data anytime.</p>
+    <h2>6. Security</h2>
+    <p>We rely on industry-standard security practices provided by Supabase for account and data protection (such as encrypted connections and access controls). Data stored only locally on your device also depends on your device's own security settings. No method of transmission or storage is 100% secure, and we can't guarantee absolute security.</p>
 
-    <h2>7. Changes</h2>
-    <p>May be updated.</p>
+    <h2>7. Children's Privacy</h2>
+    <p>Life Manager is not directed at children under 13, and we do not knowingly collect information from children under 13.</p>
 
-    <h2>8. Contact</h2>
+    <h2>8. Your Control</h2>
+    <p>You can delete entries within the app at any time. To delete your account and all associated cloud-stored data, contact us at the email address below.</p>
+
+    <h2>9. Changes</h2>
+    <p>This policy may be updated from time to time. Changes will be posted on this page with a new effective date.</p>
+
+    <h2>10. Contact</h2>
     <p>lifemanager.tracker@gmail.com</p>
 
     <div class="footer">© Life Manager</div>
-
   </div>
 </div>
-
 </body>
 </html>
