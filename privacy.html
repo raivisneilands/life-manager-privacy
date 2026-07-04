@@ -72,12 +72,12 @@
     <p>When you use Life Manager, you may enter:</p>
     <ul>
       <li>Tasks, habits, health entries, finance entries, journal entries, fitness workouts, and goals with plans to achieve them</li>
-      <li>Information about relationships with other people that you choose to add</li>
+      <li>Information about relationships with other people that you choose to add — specifically their name, birthdate, how you met, and how they're related to you (e.g. family, friend, colleague)</li>
       <li>An email address, used to create and sign in to your account</li>
     </ul>
 
     <h2>2. How Your Data Is Used</h2>
-    <p>Your data is used to power the app's features for you: displaying your entries, tracking progress, and syncing your account across devices. If you tap "Generate with AI" on a goal, the goal's title, deadline, and type are sent to our AI provider to generate a suggested plan — see Section 4 for details on what is and isn't included in that request.</p>
+    <p>Your data is used to power the app's features for you: displaying your entries, tracking progress, and syncing your account across devices. The app also includes two AI-assisted features that send some of your data to our AI provider — see Section 4 for exactly what's included in each case.</p>
 
     <h2>3. Data Storage</h2>
     <p>Some data may be stored <span class="accent">locally on your device</span>. Account data — including your goals, plan steps, and the other entries listed in Section 1 — is stored in the cloud using Supabase, so that it stays available when you sign in from a new device.</p>
@@ -86,8 +86,14 @@
     <p>Life Manager uses the following third-party services to operate:</p>
     <ul>
       <li><strong>Supabase</strong> — handles account sign-in and stores your app data (tasks, habits, health entries, finance entries, journal entries, relationships, fitness workouts, goals, and plans) on our behalf.</li>
-      <li><strong>OpenAI</strong> — when you request an AI-generated plan for a goal, only that goal's title, deadline, and goal type are sent to OpenAI to generate suggested steps. Your other data (health, finance, journal, relationships, etc.) is never sent to OpenAI.</li>
+      <li><strong>OpenAI</strong> — powers two AI features, each with a different amount of data sent:
+        <ul>
+          <li><em>Goal plan generation</em> — when you tap "Generate with AI" on a goal, only that goal's title, deadline, and goal type are sent to OpenAI.</li>
+          <li><em>Screen insights</em> — each main screen (Goals, Habits, Health, Fitness, Finance, Relationships, and Today) can generate an AI insight. Doing so sends a summary of your data from that screen to OpenAI — for example, goal titles and progress; habit streaks; average steps, sleep, water, and mood; recent income, expenses, and top spending categories; workout types and durations; or the names, birthdates, how you met, and relationship type (e.g. family, friend, colleague) of people in your Relationships list. This is generated on demand and cached for the day, so it isn't sent continuously.</li>
+        </ul>
+      </li>
     </ul>
+    <p>If you use the Relationships feature, be aware that generating an insight on that screen sends information about other people (their name, birthdate, how you met, and relationship type) to OpenAI, not just your own data.</p>
     <p>These providers process data on our behalf under their own security and data-handling practices, and do not use your data for their own purposes beyond providing the service to us.</p>
 
     <h2>5. Data Sharing</h2>
